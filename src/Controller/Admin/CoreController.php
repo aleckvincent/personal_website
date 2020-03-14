@@ -15,6 +15,6 @@ class CoreController extends AbstractController {
      * @Route("/", name="admin_index")
      */
     public function index() {
-        return $this->render('admin/base.html.twig');
+        return $this->render('admin/index.html.twig');
     }
 }
