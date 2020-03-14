@@ -58,10 +58,18 @@ The above copyright notice and this permission notice shall be included in all c
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="active ">
+         
+          <li class="{% if app.request.attributes.get('_route') == 'admin_index' %}active{% endif %}">
             <a href="./dashboard.html">
               <i class="nc-icon nc-single-02"></i>
               <p>À propos</p>
+            </a>
+          </li>
+
+          <li class="">
+            <a href="./dashboard.html">
+              <i class="nc-icon nc-paper"></i>
+              <p>Mon CV</p>
             </a>
           </li>
 
