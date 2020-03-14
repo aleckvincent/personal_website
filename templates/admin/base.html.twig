@@ -60,14 +60,14 @@ The above copyright notice and this permission notice shall be included in all c
         <ul class="nav">
          
           <li class="{% if app.request.attributes.get('_route') == 'admin_index' %}active{% endif %}">
-            <a href="./dashboard.html">
+            <a href="{{path('admin_index')}}">
               <i class="nc-icon nc-single-02"></i>
               <p>À propos</p>
             </a>
           </li>
 
-          <li class="">
-            <a href="./dashboard.html">
+          <li class="{% if app.request.attributes.get('_route') == 'admin_resume_list' %}active{% endif %}">
+            <a href="{{path('admin_resume_list')}}">
               <i class="nc-icon nc-paper"></i>
               <p>Mon CV</p>
             </a>

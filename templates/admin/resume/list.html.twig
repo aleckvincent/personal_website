@@ -1,0 +1,63 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Mon CV {% endblock %}
+{% block body  %}
+
+    <div class="row">
+        <div class="col-md-6">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#addNew">
+                    Ajout nouvel élément
+                </button>
+                
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                     <h5 class="card-title"><i class="nc-icon nc-briefcase-24"></i> Expériences pro.</h5>
+                </div>
+                <div class="card-body">
+                {% for w in works %}
+                <div class="item">
+                    <h6>{{w.title}}</h6>
+                    {{w.location}} -
+                    <i>{{w.start|date('M Y')}}</i>
+                    <br> <b>Description</b>
+                    {{w.description[:256]|raw}}...
+                    <div class="update ml-auto mr-auto">
+                      <a href="#" class="btn btn-primary btn-round">Éditer</a>
+                    </div>
+                </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                     <h5 class="card-title"> <i class="nc-icon nc-hat-3"></i> Formations</h5>
+                </div>
+                <div class="card-body">
+                {% for s in schools %}
+                <div class="item">
+                    <h6>{{s.title}}</h6>
+                    {{s.location}} -
+                    <i>{{s.start|date('M Y')}}</i>
+                    <br> <b>Description</b>
+                    {{s.description[:256]|raw}}...
+                    <div class="update ml-auto mr-auto">
+                      <a href="#" class="btn btn-primary btn-round">Éditer</a>
+                    </div>
+                </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{# include modal when clicking on add a new element #}
+{% include 'admin/resume/modal-new.html.twig' %}
+
+{% endblock %}
