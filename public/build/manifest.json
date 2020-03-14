@@ -1,0 +1,18 @@
+{
+  "build/app.css": "/build/app.css",
+  "build/app.js": "/build/app.js",
+  "build/runtime.js": "/build/runtime.js",
+  "build/vendors~app.js": "/build/vendors~app.js",
+  "build/glyphicons-halflings-regular.woff2": "/build/448c34a56d699c29117adc64c43affeb.woff2",
+  "build/glyphicons-halflings-regular.svg": "/build/89889688147bd7575d6327160d64e760.svg",
+  "build/glyphicons-halflings-regular.ttf": "/build/e18bbf611f2a2e43afc071aa2f4e1512.ttf",
+  "build/glyphicons-halflings-regular.eot": "/build/f4769f9bdb7466be65088239c12046d1.eot",
+  "build/glyphicons-halflings-regular.woff": "/build/fa2772327f55d8198301fdb8bcfc8158.woff",
+  "build/fonts/glyphicons-halflings-regular.ttf": "/build/fonts/glyphicons-halflings-regular.001a4eef.ttf",
+  "build/fonts/glyphicons-halflings-regular.woff2": "/build/fonts/glyphicons-halflings-regular.057ac393.woff2",
+  "build/fonts/glyphicons-halflings-regular.woff": "/build/fonts/glyphicons-halflings-regular.b6d504b1.woff",
+  "build/fonts/glyphicons-halflings-regular.eot": "/build/fonts/glyphicons-halflings-regular.faf26c2c.eot",
+  "build/images/glyphicons-halflings-regular.svg": "/build/images/glyphicons-halflings-regular.ee346301.svg",
+  "build/images/mCSB_buttons.png": "/build/images/mCSB_buttons.10cca352.png",
+  "build/images/owl.video.play.png": "/build/images/owl.video.play.4a37f800.png"
+}

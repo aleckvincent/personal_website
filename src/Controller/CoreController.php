@@ -14,7 +14,7 @@ class CoreController extends AbstractController
    * @Route("/", name="index")
    */
   public function index() {
-    return new Response("Hello World");
+    return $this->render('base.html.twig');
   }
   
 }
