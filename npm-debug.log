@@ -1,0 +1,306 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'fs',
+1 verbose cli   'lib/generate-banner',
+1 verbose cli   'package' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData fs@0.0.1-security
+8 silly fetchPackageMetaData lib/generate-banner
+9 silly fetchPackageMetaData package
+10 silly fetchNamedPackageData fs
+11 silly mapToRegistry name fs
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/fs
+15 silly fetchOtherPackageData lib/generate-banner
+16 silly cache add args [ 'lib/generate-banner', null ]
+17 verbose cache add spec lib/generate-banner
+18 silly fetchNamedPackageData package
+19 silly mapToRegistry name package
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/package
+23 silly cache add parsed spec Result {
+23 silly cache add   raw: 'lib/generate-banner',
+23 silly cache add   scope: null,
+23 silly cache add   name: null,
+23 silly cache add   rawSpec: 'lib/generate-banner',
+23 silly cache add   spec: 'github:lib/generate-banner',
+23 silly cache add   type: 'hosted',
+23 silly cache add   hosted:
+23 silly cache add    { type: 'github',
+23 silly cache add      ssh: 'git@github.com:lib/generate-banner.git',
+23 silly cache add      sshUrl: 'git+ssh://git@github.com/lib/generate-banner.git',
+23 silly cache add      httpsUrl: 'git+https://github.com/lib/generate-banner.git',
+23 silly cache add      gitUrl: 'git://github.com/lib/generate-banner.git',
+23 silly cache add      shortcut: 'github:lib/generate-banner',
+23 silly cache add      directUrl: 'https://raw.githubusercontent.com/lib/generate-banner/master/package.json' } }
+24 verbose addRemoteGit caching lib/generate-banner
+25 verbose addRemoteGit lib/generate-banner is a repository hosted by github
+26 silly tryGitProto attempting to clone git://github.com/lib/generate-banner.git
+27 silly tryClone cloning lib/generate-banner via git://github.com/lib/generate-banner.git
+28 verbose tryClone git-github-com-lib-generate-banner-git-cdefa3c4 not in flight; caching
+29 verbose request uri https://registry.npmjs.org/fs
+30 verbose request no auth needed
+31 info attempt registry request try #1 at 16:54:47
+32 verbose request id 340657f77136cb53
+33 verbose etag W/"31ff75b0a60ab91d49b89bbf50a6b2b6"
+34 verbose lastModified Fri, 15 Nov 2019 23:33:29 GMT
+35 http request GET https://registry.npmjs.org/fs
+36 verbose request uri https://registry.npmjs.org/package
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 16:54:47
+39 verbose etag W/"93be69b24dffb8ff690ee8d437807441"
+40 verbose lastModified Mon, 11 Nov 2019 02:21:32 GMT
+41 http request GET https://registry.npmjs.org/package
+42 info git [ 'config', '--get', 'remote.origin.url' ]
+43 warn addRemoteGit Error: Command failed: git config --get remote.origin.url
+43 warn addRemoteGit
+43 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:275:12)
+43 warn addRemoteGit     at emitTwo (events.js:126:13)
+43 warn addRemoteGit     at ChildProcess.emit (events.js:214:7)
+43 warn addRemoteGit     at maybeClose (internal/child_process.js:925:16)
+43 warn addRemoteGit     at Socket.stream.socket.on (internal/child_process.js:346:11)
+43 warn addRemoteGit     at emitOne (events.js:116:13)
+43 warn addRemoteGit     at Socket.emit (events.js:211:7)
+43 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:567:12)
+43 warn addRemoteGit  lib/generate-banner resetting remote /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-cdefa3c4 because of error: { Error: Command failed: git config --get remote.origin.url
+43 warn addRemoteGit
+43 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:275:12)
+43 warn addRemoteGit     at emitTwo (events.js:126:13)
+43 warn addRemoteGit     at ChildProcess.emit (events.js:214:7)
+43 warn addRemoteGit     at maybeClose (internal/child_process.js:925:16)
+43 warn addRemoteGit     at Socket.stream.socket.on (internal/child_process.js:346:11)
+43 warn addRemoteGit     at emitOne (events.js:116:13)
+43 warn addRemoteGit     at Socket.emit (events.js:211:7)
+43 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:567:12)
+43 warn addRemoteGit   killed: false,
+43 warn addRemoteGit   code: 1,
+43 warn addRemoteGit   signal: null,
+43 warn addRemoteGit   cmd: 'git config --get remote.origin.url' }
+44 info resetRemote resetting /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-cdefa3c4 for lib/generate-banner
+45 silly gentlyRm /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-cdefa3c4 is being purged
+46 verbose gentlyRm don't care about contents; nuking /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-cdefa3c4
+47 silly vacuum-fs purging /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-cdefa3c4
+48 silly vacuum-fs quitting because other entries in /home/aleck/.npm/_git-remotes
+49 info git [ 'clone',
+49 info git   '--template=/home/aleck/.npm/_git-remotes/_templates',
+49 info git   '--mirror',
+49 info git   'git://github.com/lib/generate-banner.git',
+49 info git   '/home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-cdefa3c4' ]
+50 http 304 https://registry.npmjs.org/fs
+51 verbose headers { date: 'Sat, 14 Mar 2020 15:54:47 GMT',
+51 verbose headers   connection: 'keep-alive',
+51 verbose headers   'set-cookie':
+51 verbose headers    [ '__cfduid=de7adf6e23feba53daaeb2593327290e11584201287; expires=Mon, 13-Apr-20 15:54:47 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+51 verbose headers   'cf-ray': '573f2cde9ebad779-MRS',
+51 verbose headers   age: '516',
+51 verbose headers   'cache-control': 'public, max-age=300',
+51 verbose headers   etag: '"31ff75b0a60ab91d49b89bbf50a6b2b6"',
+51 verbose headers   'last-modified': 'Fri, 15 Nov 2019 23:33:29 GMT',
+51 verbose headers   vary: 'Accept-Encoding',
+51 verbose headers   'cf-cache-status': 'HIT',
+51 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+51 verbose headers   server: 'cloudflare' }
+52 silly get cb [ 304,
+52 silly get   { date: 'Sat, 14 Mar 2020 15:54:47 GMT',
+52 silly get     connection: 'keep-alive',
+52 silly get     'set-cookie':
+52 silly get      [ '__cfduid=de7adf6e23feba53daaeb2593327290e11584201287; expires=Mon, 13-Apr-20 15:54:47 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+52 silly get     'cf-ray': '573f2cde9ebad779-MRS',
+52 silly get     age: '516',
+52 silly get     'cache-control': 'public, max-age=300',
+52 silly get     etag: '"31ff75b0a60ab91d49b89bbf50a6b2b6"',
+52 silly get     'last-modified': 'Fri, 15 Nov 2019 23:33:29 GMT',
+52 silly get     vary: 'Accept-Encoding',
+52 silly get     'cf-cache-status': 'HIT',
+52 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+52 silly get     server: 'cloudflare' } ]
+53 verbose etag https://registry.npmjs.org/fs from cache
+54 verbose get saving fs to /home/aleck/.npm/registry.npmjs.org/fs/.cache.json
+55 http 304 https://registry.npmjs.org/package
+56 verbose headers { date: 'Sat, 14 Mar 2020 15:54:47 GMT',
+56 verbose headers   connection: 'keep-alive',
+56 verbose headers   'set-cookie':
+56 verbose headers    [ '__cfduid=d7204f2b31f88e59cc13b0e0fbe2f09c41584201287; expires=Mon, 13-Apr-20 15:54:47 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+56 verbose headers   'cf-ray': '573f2cde9f56d771-MRS',
+56 verbose headers   'cache-control': 'public, max-age=300',
+56 verbose headers   etag: '"93be69b24dffb8ff690ee8d437807441"',
+56 verbose headers   'last-modified': 'Mon, 11 Nov 2019 02:21:32 GMT',
+56 verbose headers   vary: 'Accept-Encoding',
+56 verbose headers   'cf-cache-status': 'HIT',
+56 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+56 verbose headers   server: 'cloudflare' }
+57 silly get cb [ 304,
+57 silly get   { date: 'Sat, 14 Mar 2020 15:54:47 GMT',
+57 silly get     connection: 'keep-alive',
+57 silly get     'set-cookie':
+57 silly get      [ '__cfduid=d7204f2b31f88e59cc13b0e0fbe2f09c41584201287; expires=Mon, 13-Apr-20 15:54:47 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+57 silly get     'cf-ray': '573f2cde9f56d771-MRS',
+57 silly get     'cache-control': 'public, max-age=300',
+57 silly get     etag: '"93be69b24dffb8ff690ee8d437807441"',
+57 silly get     'last-modified': 'Mon, 11 Nov 2019 02:21:32 GMT',
+57 silly get     vary: 'Accept-Encoding',
+57 silly get     'cf-cache-status': 'HIT',
+57 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+57 silly get     server: 'cloudflare' } ]
+58 verbose etag https://registry.npmjs.org/package from cache
+59 verbose get saving package to /home/aleck/.npm/registry.npmjs.org/package/.cache.json
+60 error git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git://github.com/lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-cdefa3c4: Clonage dans le dépôt nu '/home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-cdefa3c4'
+60 error git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git://github.com/lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-cdefa3c4: fatal: remote error:
+60 error git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git://github.com/lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-cdefa3c4:   Repository not found.
+61 silly tryHTTPS attempting to clone git+https://github.com/lib/generate-banner.git
+62 silly tryClone cloning lib/generate-banner via git+https://github.com/lib/generate-banner.git
+63 verbose tryClone git-https-github-com-lib-generate-banner-git-7e62d372 not in flight; caching
+64 info git [ 'config', '--get', 'remote.origin.url' ]
+65 warn addRemoteGit Error: Command failed: git config --get remote.origin.url
+65 warn addRemoteGit
+65 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:275:12)
+65 warn addRemoteGit     at emitTwo (events.js:126:13)
+65 warn addRemoteGit     at ChildProcess.emit (events.js:214:7)
+65 warn addRemoteGit     at maybeClose (internal/child_process.js:925:16)
+65 warn addRemoteGit     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+65 warn addRemoteGit  lib/generate-banner resetting remote /home/aleck/.npm/_git-remotes/git-https-github-com-lib-generate-banner-git-7e62d372 because of error: { Error: Command failed: git config --get remote.origin.url
+65 warn addRemoteGit
+65 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:275:12)
+65 warn addRemoteGit     at emitTwo (events.js:126:13)
+65 warn addRemoteGit     at ChildProcess.emit (events.js:214:7)
+65 warn addRemoteGit     at maybeClose (internal/child_process.js:925:16)
+65 warn addRemoteGit     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+65 warn addRemoteGit   killed: false,
+65 warn addRemoteGit   code: 1,
+65 warn addRemoteGit   signal: null,
+65 warn addRemoteGit   cmd: 'git config --get remote.origin.url' }
+66 info resetRemote resetting /home/aleck/.npm/_git-remotes/git-https-github-com-lib-generate-banner-git-7e62d372 for lib/generate-banner
+67 silly gentlyRm /home/aleck/.npm/_git-remotes/git-https-github-com-lib-generate-banner-git-7e62d372 is being purged
+68 verbose gentlyRm don't care about contents; nuking /home/aleck/.npm/_git-remotes/git-https-github-com-lib-generate-banner-git-7e62d372
+69 silly vacuum-fs purging /home/aleck/.npm/_git-remotes/git-https-github-com-lib-generate-banner-git-7e62d372
+70 silly vacuum-fs quitting because other entries in /home/aleck/.npm/_git-remotes
+71 info git [ 'clone',
+71 info git   '--template=/home/aleck/.npm/_git-remotes/_templates',
+71 info git   '--mirror',
+71 info git   'https://github.com/lib/generate-banner.git',
+71 info git   '/home/aleck/.npm/_git-remotes/git-https-github-com-lib-generate-banner-git-7e62d372' ]
+72 error git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror https://github.com/lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-https-github-com-lib-generate-banner-git-7e62d372: Clonage dans le dépôt nu '/home/aleck/.npm/_git-remotes/git-https-github-com-lib-generate-banner-git-7e62d372'
+72 error git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror https://github.com/lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-https-github-com-lib-generate-banner-git-7e62d372: remote: Invalid username or password.
+72 error git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror https://github.com/lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-https-github-com-lib-generate-banner-git-7e62d372: fatal: Authentication failed for 'https://github.com/lib/generate-banner.git/'
+73 silly trySSH attempting to clone git@github.com:lib/generate-banner.git
+74 silly tryClone cloning lib/generate-banner via git@github.com:lib/generate-banner.git
+75 verbose tryClone git-github-com-lib-generate-banner-git-56d726b1 not in flight; caching
+76 info git [ 'config', '--get', 'remote.origin.url' ]
+77 warn addRemoteGit Error: Command failed: git config --get remote.origin.url
+77 warn addRemoteGit
+77 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:275:12)
+77 warn addRemoteGit     at emitTwo (events.js:126:13)
+77 warn addRemoteGit     at ChildProcess.emit (events.js:214:7)
+77 warn addRemoteGit     at maybeClose (internal/child_process.js:925:16)
+77 warn addRemoteGit     at Socket.stream.socket.on (internal/child_process.js:346:11)
+77 warn addRemoteGit     at emitOne (events.js:116:13)
+77 warn addRemoteGit     at Socket.emit (events.js:211:7)
+77 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:567:12)
+77 warn addRemoteGit  lib/generate-banner resetting remote /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1 because of error: { Error: Command failed: git config --get remote.origin.url
+77 warn addRemoteGit
+77 warn addRemoteGit     at ChildProcess.exithandler (child_process.js:275:12)
+77 warn addRemoteGit     at emitTwo (events.js:126:13)
+77 warn addRemoteGit     at ChildProcess.emit (events.js:214:7)
+77 warn addRemoteGit     at maybeClose (internal/child_process.js:925:16)
+77 warn addRemoteGit     at Socket.stream.socket.on (internal/child_process.js:346:11)
+77 warn addRemoteGit     at emitOne (events.js:116:13)
+77 warn addRemoteGit     at Socket.emit (events.js:211:7)
+77 warn addRemoteGit     at Pipe._handle.close [as _onclose] (net.js:567:12)
+77 warn addRemoteGit   killed: false,
+77 warn addRemoteGit   code: 1,
+77 warn addRemoteGit   signal: null,
+77 warn addRemoteGit   cmd: 'git config --get remote.origin.url' }
+78 info resetRemote resetting /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1 for lib/generate-banner
+79 silly gentlyRm /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1 is being purged
+80 verbose gentlyRm don't care about contents; nuking /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1
+81 silly vacuum-fs purging /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1
+82 silly vacuum-fs quitting because other entries in /home/aleck/.npm/_git-remotes
+83 info git [ 'clone',
+83 info git   '--template=/home/aleck/.npm/_git-remotes/_templates',
+83 info git   '--mirror',
+83 info git   'git@github.com:lib/generate-banner.git',
+83 info git   '/home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1' ]
+84 error git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git@github.com:lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1: Clonage dans le dépôt nu '/home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1'
+84 error git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git@github.com:lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1: Warning: Permanently added the RSA host key for IP address '140.82.118.4' to the list of known hosts.
+84 error git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git@github.com:lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1: git@github.com: Permission denied (publickey).
+84 error git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git@github.com:lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1: fatal: Impossible de lire le dépôt distant.
+84 error git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git@github.com:lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1:
+84 error git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git@github.com:lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1: Veuillez vérifier que vous avez les droits d'accès
+84 error git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git@github.com:lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1: et que le dépôt existe.
+85 silly fetchPackageMetaData Error: Command failed: git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git@github.com:lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1
+85 silly fetchPackageMetaData Clonage dans le dépôt nu '/home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1'
+85 silly fetchPackageMetaData Warning: Permanently added the RSA host key for IP address '140.82.118.4' to the list of known hosts.
+85 silly fetchPackageMetaData git@github.com: Permission denied (publickey).
+85 silly fetchPackageMetaData fatal: Impossible de lire le dépôt distant.
+85 silly fetchPackageMetaData
+85 silly fetchPackageMetaData Veuillez vérifier que vous avez les droits d'accès
+85 silly fetchPackageMetaData et que le dépôt existe.
+85 silly fetchPackageMetaData
+85 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:275:12)
+85 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+85 silly fetchPackageMetaData     at ChildProcess.emit (events.js:214:7)
+85 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:925:16)
+85 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+85 silly fetchPackageMetaData  error for lib/generate-banner { Error: Command failed: git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git@github.com:lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1
+85 silly fetchPackageMetaData Clonage dans le dépôt nu '/home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1'
+85 silly fetchPackageMetaData Warning: Permanently added the RSA host key for IP address '140.82.118.4' to the list of known hosts.
+85 silly fetchPackageMetaData git@github.com: Permission denied (publickey).
+85 silly fetchPackageMetaData fatal: Impossible de lire le dépôt distant.
+85 silly fetchPackageMetaData
+85 silly fetchPackageMetaData Veuillez vérifier que vous avez les droits d'accès
+85 silly fetchPackageMetaData et que le dépôt existe.
+85 silly fetchPackageMetaData
+85 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:275:12)
+85 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+85 silly fetchPackageMetaData     at ChildProcess.emit (events.js:214:7)
+85 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:925:16)
+85 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+85 silly fetchPackageMetaData   killed: false,
+85 silly fetchPackageMetaData   code: 128,
+85 silly fetchPackageMetaData   signal: null,
+85 silly fetchPackageMetaData   cmd: 'git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git@github.com:lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1' }
+86 silly rollbackFailedOptional Starting
+87 silly rollbackFailedOptional Finishing
+88 silly runTopLevelLifecycles Starting
+89 silly runTopLevelLifecycles Finishing
+90 silly install printInstalled
+91 verbose stack Error: Command failed: git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git@github.com:lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1
+91 verbose stack Clonage dans le dépôt nu '/home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1'
+91 verbose stack Warning: Permanently added the RSA host key for IP address '140.82.118.4' to the list of known hosts.
+91 verbose stack git@github.com: Permission denied (publickey).
+91 verbose stack fatal: Impossible de lire le dépôt distant.
+91 verbose stack
+91 verbose stack Veuillez vérifier que vous avez les droits d'accès
+91 verbose stack et que le dépôt existe.
+91 verbose stack
+91 verbose stack     at ChildProcess.exithandler (child_process.js:275:12)
+91 verbose stack     at emitTwo (events.js:126:13)
+91 verbose stack     at ChildProcess.emit (events.js:214:7)
+91 verbose stack     at maybeClose (internal/child_process.js:925:16)
+91 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+92 verbose cwd /media/aleck/DATA/code/a-vincent
+93 error Linux 5.3.0-40-generic
+94 error argv "/usr/bin/node" "/usr/bin/npm" "install" "--save" "fs" "lib/generate-banner" "package"
+95 error node v8.10.0
+96 error npm  v3.5.2
+97 error code 128
+98 error Command failed: git clone --template=/home/aleck/.npm/_git-remotes/_templates --mirror git@github.com:lib/generate-banner.git /home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1
+98 error Clonage dans le dépôt nu '/home/aleck/.npm/_git-remotes/git-github-com-lib-generate-banner-git-56d726b1'
+98 error Warning: Permanently added the RSA host key for IP address '140.82.118.4' to the list of known hosts.
+98 error git@github.com: Permission denied (publickey).
+98 error fatal: Impossible de lire le dépôt distant.
+98 error
+98 error Veuillez vérifier que vous avez les droits d'accès
+98 error et que le dépôt existe.
+99 error If you need help, you may report this error at:
+99 error     <https://github.com/npm/npm/issues>
+100 verbose exit [ 1, true ]
