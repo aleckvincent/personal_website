@@ -5,9 +5,9 @@
 
     <div class="row">
         <div class="col-md-6">
-                <button class="btn btn-danger" data-toggle="modal" data-target="#addNew">
+                <a class="btn btn-danger" href="{{path('admin_resume_save')}}">
                     Ajout nouvel élément
-                </button>
+                </a>
                 
         </div>
     </div>
@@ -20,6 +20,7 @@
                 <div class="card-body">
                 {% for w in works %}
                 <div class="item">
+                <hr>
                     <h6>{{w.title}}</h6>
                     {{w.location}} -
                     <i>{{w.start|date('M Y')}}</i>
@@ -41,6 +42,7 @@
                 <div class="card-body">
                 {% for s in schools %}
                 <div class="item">
+                <hr>
                     <h6>{{s.title}}</h6>
                     {{s.location}} -
                     <i>{{s.start|date('M Y')}}</i>
@@ -57,7 +59,5 @@
     </div>
 
 
-{# include modal when clicking on add a new element #}
-{% include 'admin/resume/modal-new.html.twig' %}
 
 {% endblock %}

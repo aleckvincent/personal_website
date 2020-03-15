@@ -1,0 +1,87 @@
+{% extends 'admin/base.html.twig' %}
+{% block title %}Mon CV{% endblock title %}
+
+
+{% block body %}
+
+<div class="row">
+    <div class="col-md-12">
+        <nav aria-label="breadcrumb" role="navigation">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{path('admin_index')}}">Tableau de bord</a></li>
+            <li class="breadcrumb-item"><a href="{{path('admin_resume_list')}}">Mon CV</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+        </nav>
+    </div>
+
+    <div class="col-md-12">
+        <div class="row">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Ajout d'un nouvel élément au CV</h5>
+                </div>
+                <div class="card-body">
+                    <form  method="post" id="form_add_resume" action="{{path('admin_resume_save')}}">
+                        <div class="row">
+                            <div class="col-md-12">
+                            <div class="form-group">
+                                <label><b>Titre</b></label>
+                                {{form_widget(form.title)}}
+                            </div>
+                            </div>
+                            <div class="col-md-12">
+                            <div class="form-group">
+                                <label><b>Entreprise / Centre de formation</b></label>
+                                {{form_widget(form.location)}}
+                            </div>
+                            </div>
+                            <div class="col-md-6">
+                            <div class="form-group">
+                            <label><b>Date de debut</b></label>
+                            {{form_widget(form.start)}}
+                            </div>
+                            </div>
+                            <div class="col-md-6">
+                            <div class="form-group">
+                            <label><b>Date de fin</b></label>
+                            {{form_widget(form.end)}}
+                            </div>
+                            </div>
+                            <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-check-label">
+                                    En cours d'activité ?
+                                    {{form_widget(form.ongoing)}}
+                                </b></label>
+                            </div>
+                            </div>
+                            <div class="col-md-6">
+                            <div class="form-group">
+                                <label>
+                                    Type
+                                    {{form_widget(form.type)}}
+                                </b></label>
+                            </div>
+                            </div>
+                            <div class="col-md-12">
+                            <div class="form-group">
+                            <label><b>Description</b></label>
+                            {{form_widget(form.description)}}
+                            </div>
+                            </div>
+                        </div>
+                        {{form_widget(form._token)}}
+                     <button type="submit" class=" btn btn-primary">Enregistrer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+        
+  
+{% endblock body %}
