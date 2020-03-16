@@ -23,12 +23,21 @@
                 
                     <h6>{{w.title}}</h6>
                     {{w.location}} -
-                    <i>{{w.start|date('M Y')}}</i>
-                    <br> <b>Description</b>
-                    {{w.description[:256]|raw}}...
+                    <i>{{w.start|date('F Y')}}
+                    {% if w.ongoing == true %}
+                    - en cours</i>
+                    {% else %}
+                    - {{w.end|date('F Y')}}</i> 
+                    {% endif %}
+                    
+                    <p> <b>Description</b>
+                    {{w.description|markdown}}
+                    </p>
                     <div class="update ml-auto mr-auto">
                       <a href="{{path('admin_resume_edit', {'id': w.id})}}" class="btn btn-primary btn-round">Éditer</a>
+                      <a href="{{path('admin_resume_delete', {'id': w.id})}}" class="btn btn-danger btn-round">Supprimer</a>
                     </div>
+                
                     <hr>
                 </div>
                 {% endfor %}
@@ -46,11 +55,17 @@
                 
                     <h6>{{s.title}}</h6>
                     {{s.location}} -
-                    <i>{{s.start|date('M Y')}}</i>
-                    <br> <b>Description</b>
-                    {{s.description[:256]|raw}}...
+                    <i>{{s.start|date('F Y')}} 
+                     {% if s.ongoing == true %}
+                    - en cours</i>
+                    {% else %}
+                    - {{s.end|date('F Y')}}</i> 
+                    {% endif %}</i>
+                    <p> <b>Description</b>
+                    {{s.description|markdown}}</p>
                     <div class="update ml-auto mr-auto">
                       <a href="{{path('admin_resume_edit', {'id': s.id})}}" class="btn btn-primary btn-round">Éditer</a>
+                      <a href="{{path('admin_resume_delete', {'id': s.id})}}" class="btn btn-danger btn-round">Supprimer</a>
                     </div>
                     <hr>
                 </div>
