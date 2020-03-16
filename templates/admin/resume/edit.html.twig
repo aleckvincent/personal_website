@@ -10,7 +10,7 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{path('admin_index')}}">Tableau de bord</a></li>
             <li class="breadcrumb-item"><a href="{{path('admin_resume_list')}}">Mon CV</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Nouvel élément au CV</li>
+            <li class="breadcrumb-item active" aria-current="page">Modification élément CV</li>
         </ol>
         </nav>
     </div>
@@ -20,10 +20,10 @@
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header">
-                    <h5 class="card-title">Ajout d'un nouvel élément au CV</h5>
+                    <h5 class="card-title">Modification d'un élément du CV</h5>
                 </div>
                 <div class="card-body">
-                    <form  method="post" id="form_add_resume" action="{{path('admin_resume_save')}}">
+                    <form  method="post" id="form_add_resume" action="{{path('admin_resume_edit', {'id': id})}}">
                         <div class="row">
                             <div class="col-md-12">
                             <div class="form-group">
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                         {{form_widget(form._token)}}
-                     <button type="submit" class=" btn btn-primary">Enregistrer</button>
+                     <button type="submit" class=" btn btn-primary">Mettre à jour</button>
                     </form>
                 </div>
             </div>

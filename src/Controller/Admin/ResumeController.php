@@ -50,4 +50,26 @@ class ResumeController extends AbstractController {
             'form' => $form->createView()
         ]);
     }
+
+    /**
+     * @Route("/edit/{id}", name="admin_resume_edit")
+     */
+    public function edit(Request $request, Resume $resume) {
+
+        $form = $this->createForm(ResumeType::class, $resume);
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($resume);
+            $em->flush();
+            $this->addFlash('notice', 'Element du CV modifié.');
+            return $this->redirectToRoute('admin_resume_list');
+        }
+
+        return $this->render('admin/resume/edit.html.twig', [
+            'form' => $form->createView(),
+            'id' => $resume->getId()
+        ]);
+    }
 }
