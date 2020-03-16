@@ -29,7 +29,8 @@ class ResumeType extends AbstractType
                 'widget' => 'single_text'
             ])
             ->add('end', DateType::class, [
-                'widget' => 'single_text'
+                'widget' => 'single_text',
+                'required' => false
             ])
             ->add('ongoing', ChoiceType::class, [
                 'choices' => [
@@ -40,7 +41,8 @@ class ResumeType extends AbstractType
 
             ])
             ->add('description', TextareaType::class, [
-                'attr' => ['class' => 'tinymce']
+                'attr' => ['class' => 'tinymce'],
+                'required' => false
             ])
         ;
     }

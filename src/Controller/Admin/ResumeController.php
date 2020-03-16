@@ -72,4 +72,20 @@ class ResumeController extends AbstractController {
             'id' => $resume->getId()
         ]);
     }
+
+    /**
+     * @Route("/delete/{id}", name="admin_resume_delete")
+     */
+    public function delete(Resume $resume) {
+
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($resume);
+        $em->flush();
+
+        $this->addFlash('notice', 'Element du CV supprimé.');
+        return $this->redirectToRoute('admin_resume_list');
+       
+
+    }
+
 }
